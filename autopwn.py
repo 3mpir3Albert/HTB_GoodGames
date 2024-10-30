@@ -24,7 +24,7 @@ def password_crack(password):
     p2=log.progress("Password cracking")
     p2.status("Starting process...")
     time.sleep(2)
-    result=os.popen(f"hashcat -a 0 -m 0 --show '{password}' /usr/share/wordlists/rockyou.txt &>/dev/null").read()
+    result=os.popen(f"hashcat -a 0 -m 0 '{password}' /usr/share/wordlists/rockyou.txt &>/dev/null").read()
     p2.success(f"La contraseña crackeada es: {result.split(':')[1]}")
     return result.split(":")[1]
 
