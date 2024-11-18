@@ -3,7 +3,7 @@ In this repository you will find an autopwn tool in case you want to resolve the
 
 Autopwn.py will give you root permissions on the docker of GoodGames machine when you run it. If you want to run this exploit you will have to specify 3 parameters:
 
-Host IP: Nunchucks host IP.
+Host IP: GoodGames host IP.
 
 Your own IP: Necessary to receive a reverse shell.
 
